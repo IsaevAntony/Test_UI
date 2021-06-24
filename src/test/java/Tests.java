@@ -12,12 +12,11 @@ public class Tests {
     }
 
     @Test (dataProvider = "data-provider")
-    public void test(String valuta){
+    public void test(String money){
         open("https://www.google.ru/", GoogleMainPage.class)
                 .search("Открытие")
                 .goLinkByName("https://www.open.ru", OpenMainPage.class)
-                .checkBuySell(valuta);
+                .checkBuySell(money);
         Selenide.close();
-
     }
 }

@@ -11,27 +11,29 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <org.testng.version>6.14.3</org.testng.version>
+        <com.codeborne.version>5.5.0</com.codeborne.version>
+        <io.qameta.allure.version>2.13.2</io.qameta.allure.version>
     </properties>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+
         <dependency>
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
-        <version>6.14.3</version>
+        <version>${org.testng.version}</version>
         </dependency>
 
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
-            <version>5.5.0</version>
+            <version>${com.codeborne.version}</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
         <dependency>
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
-            <version>2.13.2</version>
+            <version>${io.qameta.allure.version}</version>
         </dependency>
 
     </dependencies>
