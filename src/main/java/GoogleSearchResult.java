@@ -11,9 +11,5 @@ public class GoogleSearchResult {
         switchTo().window(1);
         return typeNextPage.cast(page(typeNextPage));
     }
-    @Step
-    public GoogleSearchResult checkPageContainsLink(String linkName){
 
-        return this;
-    }
 }

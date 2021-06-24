@@ -25,11 +25,6 @@ public class OpenMainPage {
 
     @Step("Получаем курс валюты пукупки меньше курса валюты продажи для валюты {nameMoney}")
     public OpenMainPage checkBuySell(String nameMoney){
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         Assert.assertTrue(
                 getCourse(nameMoney,"Банк покупает")
                         <
