@@ -15,6 +15,7 @@ public class Tests {
     public void test(String money){
         open("https://www.google.ru/", GoogleMainPage.class)
                 .search("Открытие")
+                .checkPageContainsLink("https://www.open.ru")
                 .goLinkByName("https://www.open.ru", OpenMainPage.class)
                 .checkBuySell(money);
         Selenide.close();
